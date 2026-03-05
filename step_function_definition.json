@@ -1,0 +1,11 @@
+{
+  "Comment": "EBS Volume Optimization Workflow",
+  "StartAt": "RunLambdaFunction",
+  "States": {
+    "RunLambdaFunction": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:eu-north-1:(Account_ID):function:scan_and_convert_ebs",
+      "End": true
+    }
+  }
+}
